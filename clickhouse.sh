@@ -5,7 +5,7 @@ sudo apt-get install -y apt-transport-https ca-certificates dirmngr
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 8919F6BD2B48D754
 echo "deb https://packages.clickhouse.com/deb stable main" | sudo tee /etc/apt/sources.list.d/clickhouse.list
 
-yes | sudo DEBIAN_FRONTEND=noninteractive apt-get -yqq install clickhouse-server clickhouse-client
+sudo yes | sudo DEBIAN_FRONTEND=noninteractive apt-get -yqq install clickhouse-server clickhouse-client
 
 # разрешить слушать внешний трафик
 sudo sed -i -e "s/<\!-- <listen_host>::<\/listen_host> -->/<listen_host>::<\/listen_host>/g" /etc/clickhouse-server/config.xml
