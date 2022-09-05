@@ -44,6 +44,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: [tools]
     steps:
-      - uses: actions/checkout@v3
-      - name: Install Docker
-        run: sh ./docker.sh
+    - uses: docker-practice/actions-setup-docker@master
+    - run: |
+        set -x
+        docker version
+        docker run --rm hello-world
