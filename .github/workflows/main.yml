@@ -23,7 +23,6 @@ jobs:
     runs-on: self-hosted
     needs: [clickhouse]
     steps:
-      - uses: actions/checkout@v3
       - name: Add User to ClickHouse
         env:
           CH_USR: ${{ secrets.CH_USR }}
