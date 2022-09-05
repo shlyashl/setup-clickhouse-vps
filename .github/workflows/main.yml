@@ -34,7 +34,7 @@ jobs:
 
   tools:
     runs-on: self-hosted
-    needs: [ch_user]
+    needs: [clickhouse]
     steps:
       - uses: actions/checkout@v3
       - name: Install tools
