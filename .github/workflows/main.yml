@@ -28,6 +28,7 @@ jobs:
           CH_USR: ${{ secrets.CH_USR }}
           CH_PWD: ${{ secrets.CH_PWD }}
         run: |
+          clickhouse-client --query="drop user if exists $CH_USR"
           clickhouse-client --query="create user $CH_USR identified with sha256_password by '$CH_PWD'"
           clickhouse-client --query="grant all on * to $CH_USR"
 
