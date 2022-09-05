@@ -1,9 +1,9 @@
 # Bootstrap skystark ClickHouse VPS 
 
-IP addresses: 45.87.104.115 
-Disk space:	160 GiB
-RAM:	24 GiB
-CPU number:	8 pcs.
+IP addresses: 45.87.104.115 <br />
+Disk space:	160 GiB <br />
+RAM:	24 GiB <br />
+CPU number:	8 pcs. <br />
 
 На железе:
   - Настройка iptables
