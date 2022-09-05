@@ -1,4 +1,4 @@
-# Bootstrap skystark ClickHouse VPS 
+# Bootstrap ClickHouse VPS 
 
 На железе:
   - Настройка iptables
