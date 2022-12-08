@@ -21,7 +21,7 @@ sudo iptables -t nat -A POSTROUTING -o ens3 -j MASQUERADE
 
 # открыть порты для входящего трафика
 sudo iptables -t filter -A INPUT -i ens3 -p tcp --dport 22 -j ACCEPT
-sudo iptables -A INPUT -p tcp -m tcp -m multiport --dports 8123,9099,9001,5115,8118,4337,5000 -j ACCEPT
+sudo iptables -A INPUT -p tcp -m tcp -m multiport --dports 8123,9099,9001,5115,8118,4337,5000,80 -j ACCEPT
 
 # открыть весь исходящий трафик
 sudo iptables -A INPUT -j ACCEPT -i lo
